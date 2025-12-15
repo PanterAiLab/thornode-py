@@ -22,9 +22,9 @@ class THORNodePool(BaseModel):
     savers_capacity_remaining: str
     synth_mint_paused: bool
     synth_supply_remaining: str
-    loan_collateral: str
-    loan_collateral_remaining: str
-    loan_cr: str
+    loan_collateral: Optional[str] = None
+    loan_collateral_remaining: Optional[str] = None
+    loan_cr: Optional[str] = None
     derived_depth_bps: str
     trading_halted: bool
 

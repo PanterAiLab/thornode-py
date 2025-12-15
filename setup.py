@@ -7,7 +7,7 @@ with open("README.md", "r") as readme_file:
 
 setup_args = dict(
     name='thornode-py',
-    version='0.0.2',
+    version='0.0.3',
     description="Python client for THORNode API",
     keywords=[],
     long_description=readme_text,

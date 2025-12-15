@@ -1,3 +1,4 @@
+from typing_extensions import deprecated
 import requests
 from typing import Optional
 from thornode_py.models.thronode_models_auth import THORNodeAccountsResponse
@@ -273,6 +274,7 @@ class THORNodeAPI:
 
     # Borrowers
     #-------------------------------------------------------------------------------------------------------------------
+    @deprecated("This endpoint in THORNode is no longer implemented")
     def borrower(self, asset: str, address: str, height: Optional[int] = None) -> THORNodeBorrower:
         url = f"{self.base_url}/thorchain/pool/{asset}/borrower/{address}"
         params = {"height": height} if height is not None else None
@@ -281,6 +283,7 @@ class THORNodeAPI:
         data = response.json()
         return THORNodeBorrower.model_validate(data)
 
+    @deprecated("This endpoint in THORNode is no longer implemented")
     def borrowers(self, asset: str, height: Optional[int] = None) -> list[THORNodeBorrower]:
         url = f"{self.base_url}/thorchain/pool/{asset}/borrowers"
         params = {"height": height} if height is not None else None
