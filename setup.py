@@ -6,8 +6,8 @@ with open("README.md", "r") as readme_file:
 
 
 setup_args = dict(
-    name='thornode-py',
-    version='0.0.3',
+    name='thornode_py',
+    version='0.0.4',
     description="Python client for THORNode API",
     keywords=[],
     long_description=readme_text,
@@ -16,7 +16,7 @@ setup_args = dict(
     packages=find_packages(),
     author="Leo Ertuna",
     author_email="leo.ertuna@gmail.com",
-    url="https://github.com/jpleorx/thornode-py",
+    url="https://github.com/PanterAiLab/thornode-py",
     download_url='https://pypi.org/project/thornode-py/'
 )
 
